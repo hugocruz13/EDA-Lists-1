@@ -1,0 +1,894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fase 1 - Listas ligadas: ReferÃªncia ao ficheiro C:/Users/hugoc/OneDrive - Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023_2024/Estruturas de Dados AvanÃ§adas/Dev/Listas ligadas - Fase 1/src/FunÃ§Ãµes/source.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Fase 1 - Listas ligadas
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3a050d442d0ecc9b51cb3895fe48731f.html">FunÃ§Ãµes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">FunÃ§Ãµes</a>  </div>
+  <div class="headertitle"><div class="title">ReferÃªncia ao ficheiro source.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="Fun_xC3_xA7_xC3_xB5es_2header_8h_source.html">header.h</a>&quot;</code><br />
+<code>#include &lt;locale.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+FunÃ§Ãµes</h2></td></tr>
+<tr class="memitem:a95812b5075e20fb54fb2f918d65a682d" id="r_a95812b5075e20fb54fb2f918d65a682d"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95812b5075e20fb54fb2f918d65a682d">CarregaDados</a> (int *tamanho)</td></tr>
+<tr class="memdesc:a95812b5075e20fb54fb2f918d65a682d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carrega dados de um ficheiro CSV.  <br /></td></tr>
+<tr class="separator:a95812b5075e20fb54fb2f918d65a682d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffc84d3bdfc8cf98a2517673d6748fc" id="r_adffc84d3bdfc8cf98a2517673d6748fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLista.html">Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adffc84d3bdfc8cf98a2517673d6748fc">CriarNumero</a> (int n)</td></tr>
+<tr class="memdesc:adffc84d3bdfc8cf98a2517673d6748fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria memória para alocar a estrutura lista.  <br /></td></tr>
+<tr class="separator:adffc84d3bdfc8cf98a2517673d6748fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7208b19e3c3eb39d9aecd413cb334748" id="r_a7208b19e3c3eb39d9aecd413cb334748"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLista.html">Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a> (<a class="el" href="structLista.html">Lista</a> *inicio, int n)</td></tr>
+<tr class="memdesc:a7208b19e3c3eb39d9aecd413cb334748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um número no final da lista.  <br /></td></tr>
+<tr class="separator:a7208b19e3c3eb39d9aecd413cb334748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d4862588fcef7d4521e8a20a6bc076" id="r_a38d4862588fcef7d4521e8a20a6bc076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d4862588fcef7d4521e8a20a6bc076">CriarMatriz</a> (<a class="el" href="structLista.html">Lista</a> *lista)</td></tr>
+<tr class="memdesc:a38d4862588fcef7d4521e8a20a6bc076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma <a class="el" href="structMatriz.html">Matriz</a>.  <br /></td></tr>
+<tr class="separator:a38d4862588fcef7d4521e8a20a6bc076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fe8d7f78263047eb51bcba1b4df13a" id="r_ad1fe8d7f78263047eb51bcba1b4df13a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1fe8d7f78263047eb51bcba1b4df13a">ColocarNaMatriz</a> (<a class="el" href="structMatriz.html">Matriz</a> *inicio, <a class="el" href="structLista.html">Lista</a> *linha)</td></tr>
+<tr class="memdesc:ad1fe8d7f78263047eb51bcba1b4df13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere uma nova linha na matriz.  <br /></td></tr>
+<tr class="separator:ad1fe8d7f78263047eb51bcba1b4df13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabb9050671cc3f9f2d7c55d1159d84f" id="r_aaabb9050671cc3f9f2d7c55d1159d84f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaabb9050671cc3f9f2d7c55d1159d84f">DistribuirDados</a> (int linhas, int colunas)</td></tr>
+<tr class="memdesc:aaabb9050671cc3f9f2d7c55d1159d84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribui os dados lidos de um arquivo em uma matriz dinâmica.  <br /></td></tr>
+<tr class="separator:aaabb9050671cc3f9f2d7c55d1159d84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4b15202ffa92238154a330d4fdb3f1" id="r_a3e4b15202ffa92238154a330d4fdb3f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e4b15202ffa92238154a330d4fdb3f1">MostrarMatriz</a> (<a class="el" href="structMatriz.html">Matriz</a> *m)</td></tr>
+<tr class="memdesc:a3e4b15202ffa92238154a330d4fdb3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra os elementos de uma matriz no console.  <br /></td></tr>
+<tr class="separator:a3e4b15202ffa92238154a330d4fdb3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d1c17c17e793cde95b00937efb71e9" id="r_a07d1c17c17e793cde95b00937efb71e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d1c17c17e793cde95b00937efb71e9">MudarValor</a> (<a class="el" href="structMatriz.html">Matriz</a> *matriz, int linha, int coluna, int ValorMudar)</td></tr>
+<tr class="memdesc:a07d1c17c17e793cde95b00937efb71e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifica o valor de um elemento específico na matriz.  <br /></td></tr>
+<tr class="separator:a07d1c17c17e793cde95b00937efb71e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce87bd5d413f7bb22ea34d9b944a260" id="r_afce87bd5d413f7bb22ea34d9b944a260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afce87bd5d413f7bb22ea34d9b944a260">InserirLinha</a> (<a class="el" href="structMatriz.html">Matriz</a> *matriz, int linha, int tamanhoC, int *valores)</td></tr>
+<tr class="memdesc:afce87bd5d413f7bb22ea34d9b944a260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere uma nova linha após uma linha específica na matriz.  <br /></td></tr>
+<tr class="separator:afce87bd5d413f7bb22ea34d9b944a260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c79c5842ad98dbdcf2e4def3678873" id="r_ab8c79c5842ad98dbdcf2e4def3678873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8c79c5842ad98dbdcf2e4def3678873">InserirColuna</a> (<a class="el" href="structMatriz.html">Matriz</a> *matriz, int posicao, int *valores)</td></tr>
+<tr class="memdesc:ab8c79c5842ad98dbdcf2e4def3678873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere uma nova coluna em uma posição específica em todas as linhas da matriz.  <br /></td></tr>
+<tr class="separator:ab8c79c5842ad98dbdcf2e4def3678873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d729c9edcb32af6389b981ee79e40fe" id="r_a6d729c9edcb32af6389b981ee79e40fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d729c9edcb32af6389b981ee79e40fe">RemoverLinha</a> (<a class="el" href="structMatriz.html">Matriz</a> *matriz, int linha)</td></tr>
+<tr class="memdesc:a6d729c9edcb32af6389b981ee79e40fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove uma linha específica da matriz.  <br /></td></tr>
+<tr class="separator:a6d729c9edcb32af6389b981ee79e40fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44712b32f14011b67079c18b1231eadd" id="r_a44712b32f14011b67079c18b1231eadd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMatriz.html">Matriz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44712b32f14011b67079c18b1231eadd">RemoverColuna</a> (<a class="el" href="structMatriz.html">Matriz</a> *matriz, int coluna)</td></tr>
+<tr class="memdesc:a44712b32f14011b67079c18b1231eadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove uma coluna específica de todas as linhas da matriz.  <br /></td></tr>
+<tr class="separator:a44712b32f14011b67079c18b1231eadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad822360de36d46da5c9b2f2a691fc5ca" id="r_ad822360de36d46da5c9b2f2a691fc5ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad822360de36d46da5c9b2f2a691fc5ca">somaMaiores</a> (<a class="el" href="structMatriz.html">Matriz</a> *m)</td></tr>
+<tr class="memdesc:ad822360de36d46da5c9b2f2a691fc5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soma os valores maiores da linha.  <br /></td></tr>
+<tr class="separator:ad822360de36d46da5c9b2f2a691fc5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">DocumentaÃ§Ã£o das funÃ§Ãµes</h2>
+<a id="a95812b5075e20fb54fb2f918d65a682d" name="a95812b5075e20fb54fb2f918d65a682d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95812b5075e20fb54fb2f918d65a682d">&#9670;&#160;</a></span>CarregaDados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * CarregaDados </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>tamanho</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carrega dados de um ficheiro CSV. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tamanho</td><td>Guarda quantos dados foram lidos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int* Apontador que retorna os dados lidos. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                {</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">int</span>* aux = (<span class="keywordtype">int</span>*)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * 50); <span class="comment">// Aloca memória para 50 inteiros.</span></div>
+<div class="line"><span class="lineno">   17</span> </div>
+<div class="line"><span class="lineno">   18</span>    FILE* ficheiro = fopen(<span class="stringliteral">&quot;matriz.csv&quot;</span>, <span class="stringliteral">&quot;r&quot;</span>); <span class="comment">// Abrir o arquivo.</span></div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">if</span> (ficheiro == NULL) <span class="keywordflow">return</span> NULL; <span class="comment">// Retorna NULL caso o ficheiro não seja aberto.</span></div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="comment">// Lê os dados separados por ponto e virgula enquanto houver dados.</span></div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">while</span> (fscanf_s(ficheiro, <span class="stringliteral">&quot;%d;&quot;</span>, &amp;aux[i]) == 1)</div>
+<div class="line"><span class="lineno">   24</span>    {</div>
+<div class="line"><span class="lineno">   25</span>        i++;</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    *tamanho = i;     <span class="comment">// Armazena a quantidade de numeros lidos.</span></div>
+<div class="line"><span class="lineno">   29</span>    fclose(ficheiro); <span class="comment">// Fecha o arquivo.</span></div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> aux; <span class="comment">// Retorna um apontador para os inteiros armazenados.</span></div>
+<div class="line"><span class="lineno">   32</span>    free(aux);</div>
+<div class="line"><span class="lineno">   33</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7208b19e3c3eb39d9aecd413cb334748" name="a7208b19e3c3eb39d9aecd413cb334748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7208b19e3c3eb39d9aecd413cb334748">&#9670;&#160;</a></span>ColocarNaLista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLista.html">Lista</a> * ColocarNaLista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structLista.html">Lista</a> *</td>          <td class="paramname"><span class="paramname"><em>inicio</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um número no final da lista. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>Apontador para o primeiro elemento da lista. </td></tr>
+    <tr><td class="paramname">n</td><td>O número a ser inserido na lista. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_struct" href="structLista.html">Lista</a>* nova = <a class="code hl_function" href="#adffc84d3bdfc8cf98a2517673d6748fc">CriarNumero</a>(n); <span class="comment">// Cria um novo elemento.</span></div>
+<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (nova == NULL)</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">return</span> inicio; <span class="comment">// Retorna o início.</span></div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (inicio == NULL)</div>
+<div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>        inicio = nova; <span class="comment">// Se a lista está vazia, o novo elemento é colocado no início.</span></div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* aux2 = inicio;</div>
+<div class="line"><span class="lineno">   75</span>        <span class="comment">// Percorre a lista até o final.</span></div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">while</span> (aux2-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a> != NULL)</div>
+<div class="line"><span class="lineno">   77</span>        {</div>
+<div class="line"><span class="lineno">   78</span>            aux2 = aux2-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>;</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span>        aux2-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a> = nova; <span class="comment">// Insere o novo elemento no final da lista.</span></div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> inicio; <span class="comment">// Retorna um apontador para o primeiro elemento da lista.</span></div>
+<div class="line"><span class="lineno">   84</span>}</div>
+<div class="ttc" id="asource_8c_html_adffc84d3bdfc8cf98a2517673d6748fc"><div class="ttname"><a href="#adffc84d3bdfc8cf98a2517673d6748fc">CriarNumero</a></div><div class="ttdeci">Lista * CriarNumero(int n)</div><div class="ttdoc">Cria memória para alocar a estrutura lista.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> source.c:41</div></div>
+<div class="ttc" id="astructLista_html"><div class="ttname"><a href="structLista.html">Lista</a></div><div class="ttdef"><b>DefiniÃ§Ã£o</b> header.h:9</div></div>
+<div class="ttc" id="astructLista_html_a4315f7af70e0649945cb5106f5bf77a3"><div class="ttname"><a href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">Lista::prox</a></div><div class="ttdeci">struct Lista * prox</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> header.h:11</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1fe8d7f78263047eb51bcba1b4df13a" name="ad1fe8d7f78263047eb51bcba1b4df13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1fe8d7f78263047eb51bcba1b4df13a">&#9670;&#160;</a></span>ColocarNaMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * ColocarNaMatriz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>inicio</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structLista.html">Lista</a> *</td>          <td class="paramname"><span class="paramname"><em>linha</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere uma nova linha na matriz. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inicio</td><td>Apontador para a primeira linha da matriz. </td></tr>
+    <tr><td class="paramname">linha</td><td>Apontador para a lista que será inserida como nova linha. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* nova = <a class="code hl_function" href="#a38d4862588fcef7d4521e8a20a6bc076">CriarMatriz</a>(linha); <span class="comment">// Cria uma nova linha com a lista fornecida.</span></div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (nova == NULL) <span class="keywordflow">return</span> inicio; <span class="comment">// Retorna o início se falha ao criar a nova linha.</span></div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (inicio == NULL)</div>
+<div class="line"><span class="lineno">  119</span>    {</div>
+<div class="line"><span class="lineno">  120</span>        inicio = nova; <span class="comment">// Se a matriz está vazia, a nova linha é o início.</span></div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  124</span>    {</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_struct" href="structMatriz.html">Matriz</a>* aux2 = inicio;</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        <span class="comment">// Percorre a matriz até a última linha.</span></div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">while</span> (aux2-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a> != NULL)</div>
+<div class="line"><span class="lineno">  129</span>        {</div>
+<div class="line"><span class="lineno">  130</span>            aux2 = aux2-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>;</div>
+<div class="line"><span class="lineno">  131</span>        }</div>
+<div class="line"><span class="lineno">  132</span>        aux2-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a> = nova; <span class="comment">// Insere a nova linha no final da matriz.</span></div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> inicio; <span class="comment">// Retorna um apontador para a primeira linha da matriz.</span></div>
+<div class="line"><span class="lineno">  135</span>}</div>
+<div class="ttc" id="asource_8c_html_a38d4862588fcef7d4521e8a20a6bc076"><div class="ttname"><a href="#a38d4862588fcef7d4521e8a20a6bc076">CriarMatriz</a></div><div class="ttdeci">Matriz * CriarMatriz(Lista *lista)</div><div class="ttdoc">Cria uma Matriz.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> source.c:91</div></div>
+<div class="ttc" id="astructMatriz_html"><div class="ttname"><a href="structMatriz.html">Matriz</a></div><div class="ttdef"><b>DefiniÃ§Ã£o</b> header.h:20</div></div>
+<div class="ttc" id="astructMatriz_html_a9f2b4ae53a5d0e087060da60a8e92f52"><div class="ttname"><a href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">Matriz::ProxLinha</a></div><div class="ttdeci">struct Matriz * ProxLinha</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> header.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38d4862588fcef7d4521e8a20a6bc076" name="a38d4862588fcef7d4521e8a20a6bc076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d4862588fcef7d4521e8a20a6bc076">&#9670;&#160;</a></span>CriarMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * CriarMatriz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structLista.html">Lista</a> *</td>          <td class="paramname"><span class="paramname"><em>lista</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria uma <a class="el" href="structMatriz.html">Matriz</a>. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lista</td><td>Apontador para a lista que é uma linha da matriz. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>                                  {</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* aux = (<a class="code hl_struct" href="structMatriz.html">Matriz</a>*)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structMatriz.html">Matriz</a>) * 1); <span class="comment">// Aloca memória para uma nova linha da matriz.</span></div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (aux != NULL)</div>
+<div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>        aux-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a> = lista;    <span class="comment">// Define a lista como linha da matriz.</span></div>
+<div class="line"><span class="lineno">   98</span>        aux-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a> = NULL; <span class="comment">// Define a próxima linha vazia</span></div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> aux; <span class="comment">// Retorna um apontador para a nova linha da matriz.</span></div>
+<div class="line"><span class="lineno">  102</span>    free(aux);</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="astructMatriz_html_a17b03820c8a5673afd37926df294698e"><div class="ttname"><a href="structMatriz.html#a17b03820c8a5673afd37926df294698e">Matriz::linha</a></div><div class="ttdeci">Lista * linha</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> header.h:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adffc84d3bdfc8cf98a2517673d6748fc" name="adffc84d3bdfc8cf98a2517673d6748fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffc84d3bdfc8cf98a2517673d6748fc">&#9670;&#160;</a></span>CriarNumero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structLista.html">Lista</a> * CriarNumero </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria memória para alocar a estrutura lista. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>numero que é colocado na lista </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Lista* Ponteiro para o novo elemento da lista. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                          {</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_struct" href="structLista.html">Lista</a>* aux = (<a class="code hl_struct" href="structLista.html">Lista</a>*)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structLista.html">Lista</a>) * 1); <span class="comment">// Aloca memória para um novo elemento na lista.</span></div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">if</span> (aux != NULL)</div>
+<div class="line"><span class="lineno">   46</span>    {</div>
+<div class="line"><span class="lineno">   47</span>        aux-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a> = n;     <span class="comment">// Define o valor do número.</span></div>
+<div class="line"><span class="lineno">   48</span>        aux-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a> = NULL; <span class="comment">// Define o proximo elemento como NULL.</span></div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> aux; <span class="comment">// Retorna uma apontador para o novo elemento da lista.</span></div>
+<div class="line"><span class="lineno">   52</span>    free(aux);</div>
+<div class="line"><span class="lineno">   53</span>}</div>
+<div class="ttc" id="astructLista_html_a86cf672daa4e0ad11ad10efc894d19c8"><div class="ttname"><a href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">Lista::num</a></div><div class="ttdeci">int num</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> header.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaabb9050671cc3f9f2d7c55d1159d84f" name="aaabb9050671cc3f9f2d7c55d1159d84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabb9050671cc3f9f2d7c55d1159d84f">&#9670;&#160;</a></span>DistribuirDados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * DistribuirDados </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>linhas</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colunas</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Distribui os dados lidos de um arquivo em uma matriz dinâmica. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linhas</td><td>Número de linhas da matriz a ser criada. </td></tr>
+    <tr><td class="paramname">colunas</td><td>Número de colunas por linha na matriz. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordtype">int</span> quantosNum = 0;</div>
+<div class="line"><span class="lineno">  147</span>    <span class="keywordtype">int</span>* valores = <a class="code hl_function" href="#a95812b5075e20fb54fb2f918d65a682d">CarregaDados</a>(&amp;quantosNum); <span class="comment">// Carrega os dados do arquivo.</span></div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* matriz = NULL;</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// Cria a matriz linha por linha.</span></div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; linhas; l++) {</div>
+<div class="line"><span class="lineno">  153</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* linha = NULL;</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>        <span class="comment">// Adiciona os valores à linha atual.</span></div>
+<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c = 0; c &lt; colunas; c++) {</div>
+<div class="line"><span class="lineno">  157</span>            linha = <a class="code hl_function" href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a>(linha, valores[i++]);</div>
+<div class="line"><span class="lineno">  158</span>        }</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>        <span class="comment">// Adiciona a linha à matriz.</span></div>
+<div class="line"><span class="lineno">  161</span>        matriz = <a class="code hl_function" href="#ad1fe8d7f78263047eb51bcba1b4df13a">ColocarNaMatriz</a>(matriz, linha);</div>
+<div class="line"><span class="lineno">  162</span>    }</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">return</span> matriz; <span class="comment">// Retorna a matriz criada.</span></div>
+<div class="line"><span class="lineno">  165</span>}</div>
+<div class="ttc" id="asource_8c_html_a7208b19e3c3eb39d9aecd413cb334748"><div class="ttname"><a href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a></div><div class="ttdeci">Lista * ColocarNaLista(Lista *inicio, int n)</div><div class="ttdoc">Insere um número no final da lista.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> source.c:61</div></div>
+<div class="ttc" id="asource_8c_html_a95812b5075e20fb54fb2f918d65a682d"><div class="ttname"><a href="#a95812b5075e20fb54fb2f918d65a682d">CarregaDados</a></div><div class="ttdeci">int * CarregaDados(int *tamanho)</div><div class="ttdoc">Carrega dados de um ficheiro CSV.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> source.c:14</div></div>
+<div class="ttc" id="asource_8c_html_ad1fe8d7f78263047eb51bcba1b4df13a"><div class="ttname"><a href="#ad1fe8d7f78263047eb51bcba1b4df13a">ColocarNaMatriz</a></div><div class="ttdeci">Matriz * ColocarNaMatriz(Matriz *inicio, Lista *linha)</div><div class="ttdoc">Insere uma nova linha na matriz.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> source.c:111</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab8c79c5842ad98dbdcf2e4def3678873" name="ab8c79c5842ad98dbdcf2e4def3678873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c79c5842ad98dbdcf2e4def3678873">&#9670;&#160;</a></span>InserirColuna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * InserirColuna </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>matriz</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>posicao</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>valores</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere uma nova coluna em uma posição específica em todas as linhas da matriz. </p>
+<p>A função percorre cada linha da matriz, inserindo um novo valor da matriz de valores fornecida na posição especificada.</p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matriz</td><td>Apontador para a matriz onde a coluna será inserida. </td></tr>
+    <tr><td class="paramname">posicao</td><td>Posição onde a nova coluna será inserida. </td></tr>
+    <tr><td class="paramname">valores</td><td>Apontador para um arrays que prenche a nova coluna. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  284</span>                                                                 {</div>
+<div class="line"><span class="lineno">  285</span> </div>
+<div class="line"><span class="lineno">  286</span>    <span class="keywordtype">int</span> contadorLinha = 0; <span class="comment">// Contador para acessar o valor correspondente na matriz.</span></div>
+<div class="line"><span class="lineno">  287</span>    <span class="keywordtype">int</span> i = 0; <span class="comment">// Indice para percorrer os valores a serem inseridos.</span></div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* auxMatriz = matriz; <span class="comment">// Apontador para percorrer a matriz.</span></div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span> </div>
+<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">while</span> (auxMatriz != NULL) <span class="comment">// Percorre todas as linhas da matriz.</span></div>
+<div class="line"><span class="lineno">  293</span>    {</div>
+<div class="line"><span class="lineno">  294</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* novaLinha = NULL; <span class="comment">// Inicializa a nova configuração da linha.</span></div>
+<div class="line"><span class="lineno">  295</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* linhaAtual = auxMatriz-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a>; <span class="comment">// Apontador para percorrer os elementos da linha atual.</span></div>
+<div class="line"><span class="lineno">  296</span>        <span class="keywordtype">int</span> contadorColuna = 1; <span class="comment">// Contador para encontrar a posição correta da coluna.</span></div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span> </div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordflow">while</span> (linhaAtual != NULL &amp;&amp; contadorColuna &lt; posicao) <span class="comment">// Copia os elementos da linha até a posição de inserção da nova coluna.</span></div>
+<div class="line"><span class="lineno">  300</span>        {</div>
+<div class="line"><span class="lineno">  301</span>            novaLinha = <a class="code hl_function" href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a>(novaLinha, linhaAtual-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a>);</div>
+<div class="line"><span class="lineno">  302</span>            linhaAtual = linhaAtual-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>;</div>
+<div class="line"><span class="lineno">  303</span>            contadorColuna++;</div>
+<div class="line"><span class="lineno">  304</span>        }</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span> </div>
+<div class="line"><span class="lineno">  307</span>        novaLinha = <a class="code hl_function" href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a>(novaLinha, valores[i++]); <span class="comment">// Insere o novo valor na coluna especificada.</span></div>
+<div class="line"><span class="lineno">  308</span> </div>
+<div class="line"><span class="lineno">  309</span> </div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">while</span> (linhaAtual != NULL) <span class="comment">// Continua a copiar o restante dos elementos da linha.</span></div>
+<div class="line"><span class="lineno">  311</span>        {</div>
+<div class="line"><span class="lineno">  312</span>            novaLinha = <a class="code hl_function" href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a>(novaLinha, linhaAtual-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a>);</div>
+<div class="line"><span class="lineno">  313</span>            linhaAtual = linhaAtual-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>;</div>
+<div class="line"><span class="lineno">  314</span>        }</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span> </div>
+<div class="line"><span class="lineno">  317</span>        auxMatriz-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a> = novaLinha; <span class="comment">// Atualiza a linha na matriz.</span></div>
+<div class="line"><span class="lineno">  318</span> </div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>        auxMatriz = auxMatriz-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Avança para a próxima linha da matriz.</span></div>
+<div class="line"><span class="lineno">  321</span>        contadorLinha++;</div>
+<div class="line"><span class="lineno">  322</span>    }</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">return</span> matriz; <span class="comment">// Retorna o apontador para a matriz atualizada.</span></div>
+<div class="line"><span class="lineno">  325</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afce87bd5d413f7bb22ea34d9b944a260" name="afce87bd5d413f7bb22ea34d9b944a260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce87bd5d413f7bb22ea34d9b944a260">&#9670;&#160;</a></span>InserirLinha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * InserirLinha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>matriz</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>linha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tamanhoC</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>valores</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere uma nova linha após uma linha específica na matriz. </p>
+<p>Esta função insere uma nova linha preenchida com os valores fornecidos após a linha especificada. Se a linha especificada for a última, a nova linha será adicionada ao final da matriz.</p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matriz</td><td>Aponta para a matriz onde a linha será inserida. </td></tr>
+    <tr><td class="paramname">linha</td><td>Posição após a qual a nova linha será inserida. </td></tr>
+    <tr><td class="paramname">tamanhoC</td><td>Numero de colunas na nova linha. </td></tr>
+    <tr><td class="paramname">valores</td><td>Apontador para um arrays que prenche a nova linha. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  244</span>                                                                            {</div>
+<div class="line"><span class="lineno">  245</span> </div>
+<div class="line"><span class="lineno">  246</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* LinhaM = matriz; <span class="comment">// Inicializa o apontador para percorrer a matriz.</span></div>
+<div class="line"><span class="lineno">  247</span>    <span class="keywordtype">int</span> contadorLinha = 2; <span class="comment">// Contador para encontrar a posição correta da linha.</span></div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>    <span class="comment">// Percorre a matriz até encontrar a posição para inserir a nova linha.</span></div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">while</span> (LinhaM != NULL &amp;&amp; contadorLinha &lt; linha)</div>
+<div class="line"><span class="lineno">  251</span>    {</div>
+<div class="line"><span class="lineno">  252</span>        LinhaM = LinhaM-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Avança para a próxima linha.</span></div>
+<div class="line"><span class="lineno">  253</span>        contadorLinha++;            <span class="comment">// Incrementa o contador de linhas.</span></div>
+<div class="line"><span class="lineno">  254</span>    }</div>
+<div class="line"><span class="lineno">  255</span>    <span class="comment">// Verifica se a posição foi encontrada.</span></div>
+<div class="line"><span class="lineno">  256</span>    <span class="keywordflow">if</span> (LinhaM != NULL)</div>
+<div class="line"><span class="lineno">  257</span>    {</div>
+<div class="line"><span class="lineno">  258</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* novaLinha = NULL; <span class="comment">// Inicializa a nova linha a ser inserida.</span></div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>        <span class="comment">// Preenche a nova linha com os valores fornecidos.</span></div>
+<div class="line"><span class="lineno">  261</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tamanhoC; i++)</div>
+<div class="line"><span class="lineno">  262</span>        {</div>
+<div class="line"><span class="lineno">  263</span>            novaLinha = <a class="code hl_function" href="#a7208b19e3c3eb39d9aecd413cb334748">ColocarNaLista</a>(novaLinha, valores[i]);</div>
+<div class="line"><span class="lineno">  264</span>        }</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>        <a class="code hl_struct" href="structMatriz.html">Matriz</a>* novaMatriz = <a class="code hl_function" href="#a38d4862588fcef7d4521e8a20a6bc076">CriarMatriz</a>(novaLinha); <span class="comment">// Cria um novo elemento de matriz para a nova linha.</span></div>
+<div class="line"><span class="lineno">  268</span>        novaMatriz-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a> = LinhaM-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Insere a nova linha na posição correta.</span></div>
+<div class="line"><span class="lineno">  269</span>        LinhaM-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a> = novaMatriz; <span class="comment">// Conecta a nova linha à matriz.</span></div>
+<div class="line"><span class="lineno">  270</span>    }</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordflow">return</span> matriz; <span class="comment">// Retorna o apontador para a matriz atualizada.</span></div>
+<div class="line"><span class="lineno">  273</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e4b15202ffa92238154a330d4fdb3f1" name="a3e4b15202ffa92238154a330d4fdb3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4b15202ffa92238154a330d4fdb3f1">&#9670;&#160;</a></span>MostrarMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MostrarMatriz </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mostra os elementos de uma matriz no console. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Apontador para a primeira linha da matriz. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  173</span>{</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* linhaAtual = m;</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="comment">// Corre cada linha da matriz.</span></div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">while</span> (linhaAtual != NULL)</div>
+<div class="line"><span class="lineno">  178</span>    {</div>
+<div class="line"><span class="lineno">  179</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* elementoAtual = linhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a>;</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>        <span class="comment">// Corre cada coluna da linha atual.</span></div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">while</span> (elementoAtual != NULL)</div>
+<div class="line"><span class="lineno">  183</span>        {</div>
+<div class="line"><span class="lineno">  184</span>            printf(<span class="stringliteral">&quot;%d &quot;</span>, elementoAtual-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a>); <span class="comment">// Imprime o valor do elemento.</span></div>
+<div class="line"><span class="lineno">  185</span>            elementoAtual = elementoAtual-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>; <span class="comment">// Passa para a proxima linha</span></div>
+<div class="line"><span class="lineno">  186</span>        }</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>        printf(<span class="stringliteral">&quot;\n&quot;</span>); <span class="comment">// Nova linha após terminar de imprimir uma linha da matriz.</span></div>
+<div class="line"><span class="lineno">  189</span>        linhaAtual = linhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>;</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+<div class="line"><span class="lineno">  191</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a07d1c17c17e793cde95b00937efb71e9" name="a07d1c17c17e793cde95b00937efb71e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d1c17c17e793cde95b00937efb71e9">&#9670;&#160;</a></span>MudarValor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MudarValor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>matriz</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>linha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>coluna</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ValorMudar</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifica o valor de um elemento específico na matriz. </p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matriz</td><td>Apontador para a matriz a ser modificada. </td></tr>
+    <tr><td class="paramname">linha</td><td>Número da linha do elemento a ser modificado. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Número da coluna do elemento a ser modificado. </td></tr>
+    <tr><td class="paramname">ValorMudar</td><td>Novo valor para o elemento especificado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>{</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* auxLinha = matriz;</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordtype">int</span> contadorLinha = 1;</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <span class="comment">// Encontra a linha especificada.</span></div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">while</span> (auxLinha != NULL &amp;&amp; contadorLinha &lt; linha) {</div>
+<div class="line"><span class="lineno">  208</span>        auxLinha = auxLinha-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>;</div>
+<div class="line"><span class="lineno">  209</span>        contadorLinha++;</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">if</span> (auxLinha != NULL)</div>
+<div class="line"><span class="lineno">  213</span>    {</div>
+<div class="line"><span class="lineno">  214</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* auxColuna = auxLinha-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a>;</div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordtype">int</span> contadorColuna = 1;</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>        <span class="comment">// Encontra a coluna especificada.</span></div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">while</span> (auxColuna != NULL &amp;&amp; contadorColuna &lt; coluna)</div>
+<div class="line"><span class="lineno">  219</span>        {</div>
+<div class="line"><span class="lineno">  220</span>            auxColuna = auxColuna-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>;</div>
+<div class="line"><span class="lineno">  221</span>            contadorColuna++;</div>
+<div class="line"><span class="lineno">  222</span>        }</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span>        <span class="keywordflow">if</span> (auxColuna != NULL)</div>
+<div class="line"><span class="lineno">  225</span>        {</div>
+<div class="line"><span class="lineno">  226</span>            auxColuna-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a> = ValorMudar; <span class="comment">// Modifica o valor.</span></div>
+<div class="line"><span class="lineno">  227</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;                 <span class="comment">// Retorna verdadeiro se mudar o valor.</span></div>
+<div class="line"><span class="lineno">  228</span>        }</div>
+<div class="line"><span class="lineno">  229</span>    }</div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// Retorna falso se não modificar o valor.</span></div>
+<div class="line"><span class="lineno">  231</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a44712b32f14011b67079c18b1231eadd" name="a44712b32f14011b67079c18b1231eadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44712b32f14011b67079c18b1231eadd">&#9670;&#160;</a></span>RemoverColuna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * RemoverColuna </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>matriz</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>coluna</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove uma coluna específica de todas as linhas da matriz. </p>
+<p>Percorre todas as linhas da matriz, remove o elemento que corresponde à coluna especificada em cada linha.</p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matriz</td><td>Apontador para a matriz da qual a coluna será removida. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Número da coluna a ser removida </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  379</span>                                                  {</div>
+<div class="line"><span class="lineno">  380</span> </div>
+<div class="line"><span class="lineno">  381</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* LinhaAtual = matriz; <span class="comment">// Apontador para percorrer a matriz.</span></div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>    <span class="comment">// Percorre todas as linhas da matriz.</span></div>
+<div class="line"><span class="lineno">  384</span>    <span class="keywordflow">while</span> (LinhaAtual != NULL)</div>
+<div class="line"><span class="lineno">  385</span>    {</div>
+<div class="line"><span class="lineno">  386</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* ElementoAtual = LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a>; <span class="comment">// Apontador para percorrer os elementos da linha.</span></div>
+<div class="line"><span class="lineno">  387</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* ElementoAnterior = NULL; <span class="comment">// Mantém a referência ao elemento anterior na lista.</span></div>
+<div class="line"><span class="lineno">  388</span>        <span class="keywordtype">int</span> contadorColuna = 1; <span class="comment">// Contador para encontrar a coluna especificada.</span></div>
+<div class="line"><span class="lineno">  389</span> </div>
+<div class="line"><span class="lineno">  390</span>        <span class="comment">// Percorre os elementos da linha até encontrar a coluna a ser removida.</span></div>
+<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">while</span> (ElementoAtual != NULL)</div>
+<div class="line"><span class="lineno">  392</span>        {</div>
+<div class="line"><span class="lineno">  393</span>            <span class="keywordflow">if</span> (contadorColuna == coluna)  <span class="comment">// Verifica a coluna a ser removida.</span></div>
+<div class="line"><span class="lineno">  394</span>            {</div>
+<div class="line"><span class="lineno">  395</span>                <span class="keywordflow">if</span> (ElementoAnterior == NULL)  <span class="comment">// Se for o primeiro elemento da linha.</span></div>
+<div class="line"><span class="lineno">  396</span>                {</div>
+<div class="line"><span class="lineno">  397</span>                    LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a> = ElementoAtual-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>; <span class="comment">// Atualiza o início da linha.</span></div>
+<div class="line"><span class="lineno">  398</span>                }</div>
+<div class="line"><span class="lineno">  399</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  400</span>                {</div>
+<div class="line"><span class="lineno">  401</span>                    ElementoAnterior-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a> = ElementoAtual-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>; <span class="comment">// Remove o elemento da linha.</span></div>
+<div class="line"><span class="lineno">  402</span>                }</div>
+<div class="line"><span class="lineno">  403</span>                free(ElementoAtual); <span class="comment">// Limpa a memória usada pelo elemento removido.</span></div>
+<div class="line"><span class="lineno">  404</span>                <span class="keywordflow">break</span>;               <span class="comment">// Sai do loop após remover o elemento.</span></div>
+<div class="line"><span class="lineno">  405</span>            }</div>
+<div class="line"><span class="lineno">  406</span> </div>
+<div class="line"><span class="lineno">  407</span>            ElementoAnterior = ElementoAtual;    <span class="comment">// Atualiza o elemento anterior.</span></div>
+<div class="line"><span class="lineno">  408</span>            ElementoAtual = ElementoAtual-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>; <span class="comment">// Avança para o próximo elemento.</span></div>
+<div class="line"><span class="lineno">  409</span>            contadorColuna++;                    <span class="comment">// Incrementa o contador de colunas.</span></div>
+<div class="line"><span class="lineno">  410</span>        }</div>
+<div class="line"><span class="lineno">  411</span> </div>
+<div class="line"><span class="lineno">  412</span>        LinhaAtual = LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Avança para a proxima linha da matriz.</span></div>
+<div class="line"><span class="lineno">  413</span>    }</div>
+<div class="line"><span class="lineno">  414</span> </div>
+<div class="line"><span class="lineno">  415</span>    <span class="keywordflow">return</span> matriz; <span class="comment">// Retorna o ponteiro para a matriz atualizada.</span></div>
+<div class="line"><span class="lineno">  416</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d729c9edcb32af6389b981ee79e40fe" name="a6d729c9edcb32af6389b981ee79e40fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d729c9edcb32af6389b981ee79e40fe">&#9670;&#160;</a></span>RemoverLinha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMatriz.html">Matriz</a> * RemoverLinha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>matriz</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>linha</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove uma linha específica da matriz. </p>
+<p>Localiza a linha a ser removida. Se encontrada, a linha á removida.</p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matriz</td><td>Apontador para a matriz da qual a linha será removida. </td></tr>
+    <tr><td class="paramname">linha</td><td>Número da linha a ser removida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  336</span>                                                {</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* LinhaAtual = matriz; <span class="comment">// Apontador para percorrer a matriz.</span></div>
+<div class="line"><span class="lineno">  339</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* LinhaAnterior = NULL; <span class="comment">// Apontador para manter a linha anterior.</span></div>
+<div class="line"><span class="lineno">  340</span>    <span class="keywordtype">int</span> contadorLinha = 1; <span class="comment">// Contador para encontrar a linha especificada.</span></div>
+<div class="line"><span class="lineno">  341</span> </div>
+<div class="line"><span class="lineno">  342</span>    <span class="comment">// Percorre a matriz até encontrar a linha a ser removida.</span></div>
+<div class="line"><span class="lineno">  343</span>    <span class="keywordflow">while</span> (LinhaAtual != NULL &amp;&amp; contadorLinha &lt; linha)</div>
+<div class="line"><span class="lineno">  344</span>    {</div>
+<div class="line"><span class="lineno">  345</span>        LinhaAnterior = LinhaAtual;         <span class="comment">// Atualiza a linha anterior.</span></div>
+<div class="line"><span class="lineno">  346</span>        LinhaAtual = LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Avança para a próxima linha.</span></div>
+<div class="line"><span class="lineno">  347</span>        contadorLinha++;                    <span class="comment">// Incrementa o contador de linhas.</span></div>
+<div class="line"><span class="lineno">  348</span>    }</div>
+<div class="line"><span class="lineno">  349</span> </div>
+<div class="line"><span class="lineno">  350</span>    <span class="keywordflow">if</span> (LinhaAtual != NULL)  <span class="comment">// Verifica se a linha a ser removida foi encontrada.</span></div>
+<div class="line"><span class="lineno">  351</span>    {</div>
+<div class="line"><span class="lineno">  352</span>        <span class="keywordflow">if</span> (LinhaAnterior == NULL)  <span class="comment">// Se for a primeira linha da matriz.</span></div>
+<div class="line"><span class="lineno">  353</span>        {</div>
+<div class="line"><span class="lineno">  354</span>            matriz = LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Atualiza o início da matriz.</span></div>
+<div class="line"><span class="lineno">  355</span>        }</div>
+<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  357</span>        {</div>
+<div class="line"><span class="lineno">  358</span>            LinhaAnterior-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a> = LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Remove a linha da matriz.</span></div>
+<div class="line"><span class="lineno">  359</span>        }</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span> </div>
+<div class="line"><span class="lineno">  362</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* elementoAtual = LinhaAtual-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a>;</div>
+<div class="line"><span class="lineno">  363</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* tempElemento;</div>
+<div class="line"><span class="lineno">  364</span> </div>
+<div class="line"><span class="lineno">  365</span>    }</div>
+<div class="line"><span class="lineno">  366</span> </div>
+<div class="line"><span class="lineno">  367</span>    <span class="keywordflow">return</span> matriz; <span class="comment">// Retorna o apontador para a matriz atualizada.</span></div>
+<div class="line"><span class="lineno">  368</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad822360de36d46da5c9b2f2a691fc5ca" name="ad822360de36d46da5c9b2f2a691fc5ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad822360de36d46da5c9b2f2a691fc5ca">&#9670;&#160;</a></span>somaMaiores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int somaMaiores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMatriz.html">Matriz</a> *</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Soma os valores maiores da linha. </p>
+<p>Percorre todas as linhas da matriz, e identifica o maior de todas as linhas.</p>
+<dl class="params"><dt>ParÃ¢metros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matriz</td><td>Apontador para a matriz de qual iremos somar as linhas. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  424</span>                           {</div>
+<div class="line"><span class="lineno">  425</span> </div>
+<div class="line"><span class="lineno">  426</span> </div>
+<div class="line"><span class="lineno">  427</span>    <a class="code hl_struct" href="structMatriz.html">Matriz</a>* Linhas = m; <span class="comment">// Um apontador para percorrer as linhas da matriz.</span></div>
+<div class="line"><span class="lineno">  428</span>    <span class="keywordtype">int</span> total = 0; <span class="comment">// Acumular a soma dos maiores valores encontrados.</span></div>
+<div class="line"><span class="lineno">  429</span>    <span class="keywordtype">int</span> contadorColunas = 0; <span class="comment">// Declara uma variável para contar as colunas</span></div>
+<div class="line"><span class="lineno">  430</span>    <span class="keywordtype">int</span> maior = 0;</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>    <span class="comment">// Enquanto houver linhas na matriz são percorridas.</span></div>
+<div class="line"><span class="lineno">  433</span>    <span class="keywordflow">while</span> (Linhas != NULL)</div>
+<div class="line"><span class="lineno">  434</span>    {</div>
+<div class="line"><span class="lineno">  435</span>        <span class="comment">// Inicializa um apontador &#39;colunas&#39; para percorrer os elementos (valores) de cada linha.</span></div>
+<div class="line"><span class="lineno">  436</span>        <a class="code hl_struct" href="structLista.html">Lista</a>* colunas = Linhas-&gt;<a class="code hl_variable" href="structMatriz.html#a17b03820c8a5673afd37926df294698e">linha</a>;</div>
+<div class="line"><span class="lineno">  437</span>        contadorColunas = 0; <span class="comment">// Reinicia o contador de colunas</span></div>
+<div class="line"><span class="lineno">  438</span>        maior = 0; <span class="comment">// Inicializa a 0 o maior no inicio de cada linha</span></div>
+<div class="line"><span class="lineno">  439</span> </div>
+<div class="line"><span class="lineno">  440</span>        <span class="comment">// Enquanto houver elementos percorre</span></div>
+<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">while</span> (colunas != NULL)</div>
+<div class="line"><span class="lineno">  442</span>        {</div>
+<div class="line"><span class="lineno">  443</span>            <span class="comment">// Condição que derfine o maior da linha</span></div>
+<div class="line"><span class="lineno">  444</span>            <span class="keywordflow">if</span> (colunas-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a> &gt; maior)</div>
+<div class="line"><span class="lineno">  445</span>            {</div>
+<div class="line"><span class="lineno">  446</span>                maior = colunas-&gt;<a class="code hl_variable" href="structLista.html#a86cf672daa4e0ad11ad10efc894d19c8">num</a>; <span class="comment">// Determina o maior das linhas</span></div>
+<div class="line"><span class="lineno">  447</span>                contadorColunas++; <span class="comment">// Conta as colunas</span></div>
+<div class="line"><span class="lineno">  448</span>            }</div>
+<div class="line"><span class="lineno">  449</span>            colunas = colunas-&gt;<a class="code hl_variable" href="structLista.html#a4315f7af70e0649945cb5106f5bf77a3">prox</a>; <span class="comment">// Avança de coluna</span></div>
+<div class="line"><span class="lineno">  450</span>        }</div>
+<div class="line"><span class="lineno">  451</span> </div>
+<div class="line"><span class="lineno">  452</span>        total += maior;<span class="comment">// Adiciona o maior valor encontrado na linha</span></div>
+<div class="line"><span class="lineno">  453</span> </div>
+<div class="line"><span class="lineno">  454</span>        Linhas = Linhas-&gt;<a class="code hl_variable" href="structMatriz.html#a9f2b4ae53a5d0e087060da60a8e92f52">ProxLinha</a>; <span class="comment">// Avança para a proxima linha</span></div>
+<div class="line"><span class="lineno">  455</span>    }</div>
+<div class="line"><span class="lineno">  456</span> </div>
+<div class="line"><span class="lineno">  457</span> </div>
+<div class="line"><span class="lineno">  458</span>    <span class="keywordflow">return</span> total; <span class="comment">// Retorna o total acumulado dos maiores valores encontrados em cada linha.</span></div>
+<div class="line"><span class="lineno">  459</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

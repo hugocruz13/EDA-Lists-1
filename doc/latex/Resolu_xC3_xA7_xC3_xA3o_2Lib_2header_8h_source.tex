@@ -1,0 +1,43 @@
+\doxysection{header.\+h}
+\hypertarget{Resolu_xC3_xA7_xC3_xA3o_2Lib_2header_8h_source}{}\label{Resolu_xC3_xA7_xC3_xA3o_2Lib_2header_8h_source}\index{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/Listas ligadas -\/ Fase 1/src/Resolução/Lib/header.h@{C:/Users/hugoc/OneDrive -\/ Instituto Politécnico do Cávado e do Ave/2023\_2024/Estruturas de Dados Avançadas/Dev/Listas ligadas -\/ Fase 1/src/Resolução/Lib/header.h}}
+\mbox{\hyperlink{Resolu_xC3_xA7_xC3_xA3o_2Lib_2header_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00005\ \textcolor{comment}{@struct\ Lista}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*\ @brief\ Esta\ estrutura\ para\ criar\ uma\ lista}}
+\DoxyCodeLine{00007\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLista}{Lista}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}};\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLista}{Lista}}*\ \mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};\ \ \ \ }
+\DoxyCodeLine{00013\ \}\mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_ab6aeb4753d1976cda3b3db928711cfe5}{Lista}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00016\ \textcolor{comment}{@struct\ Matriz}}
+\DoxyCodeLine{00017\ \textcolor{comment}{*\ @brief\ Esta\ estrutura\ para\ criar\ uma\ Matriz}}
+\DoxyCodeLine{00018\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMatriz}{Matriz}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ \mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ }
+\DoxyCodeLine{00024\ \}\mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a511b8f0ddc1f582f002028ce9dd11f5e}{Matriz}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a95812b5075e20fb54fb2f918d65a682d}{CarregaDados}}(\textcolor{keywordtype}{int}*\ tamanho);}
+\DoxyCodeLine{00039\ \mbox{\hyperlink{structLista}{Lista}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_adffc84d3bdfc8cf98a2517673d6748fc}{CriarNumero}}(\textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00046\ \mbox{\hyperlink{structLista}{Lista}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a7208b19e3c3eb39d9aecd413cb334748}{ColocarNaLista}}(\mbox{\hyperlink{structLista}{Lista}}*\ inicio,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a38d4862588fcef7d4521e8a20a6bc076}{CriarMatriz}}(\mbox{\hyperlink{structLista}{Lista}}*\ lista);}
+\DoxyCodeLine{00059\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_ad1fe8d7f78263047eb51bcba1b4df13a}{ColocarNaMatriz}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ inicio,\ \mbox{\hyperlink{structLista}{Lista}}*\ \mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}});}
+\DoxyCodeLine{00066\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_aaabb9050671cc3f9f2d7c55d1159d84f}{DistribuirDados}}(\textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas);}
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ m);}
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a07d1c17c17e793cde95b00937efb71e9}{MudarValor}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}},\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{int}\ ValorMudar);}
+\DoxyCodeLine{00094\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_afce87bd5d413f7bb22ea34d9b944a260}{InserirLinha}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}},\ \textcolor{keywordtype}{int}\ tamanhoC,\ \textcolor{keywordtype}{int}*\ valores);}
+\DoxyCodeLine{00105\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_ab8c79c5842ad98dbdcf2e4def3678873}{InserirColuna}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz,\ \textcolor{keywordtype}{int}\ posicao,\ \textcolor{keywordtype}{int}*\ valores);}
+\DoxyCodeLine{00115\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a6d729c9edcb32af6389b981ee79e40fe}{RemoverLinha}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}});}
+\DoxyCodeLine{00125\ \mbox{\hyperlink{structMatriz}{Matriz}}*\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a44712b32f14011b67079c18b1231eadd}{RemoverColuna}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_ad822360de36d46da5c9b2f2a691fc5ca}{somaMaiores}}(\mbox{\hyperlink{structMatriz}{Matriz}}*\ m);}
+\DoxyCodeLine{00134\ }
+
+\end{DoxyCode}

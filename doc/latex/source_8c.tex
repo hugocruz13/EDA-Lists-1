@@ -1,0 +1,671 @@
+\doxysection{ReferÃªncia ao ficheiro C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023\+\_\+2024/\+Estruturas de Dados AvanÃ§adas/\+Dev/\+Listas ligadas -\/ Fase 1/src/\+FunÃ§Ãµes/source.c}
+\hypertarget{source_8c}{}\label{source_8c}\index{C:/Users/hugoc/OneDrive -\/ Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023\_2024/Estruturas de Dados AvanÃ§adas/Dev/Listas ligadas -\/ Fase 1/src/FunÃ§Ãµes/source.c@{C:/Users/hugoc/OneDrive -\/ Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023\_2024/Estruturas de Dados AvanÃ§adas/Dev/Listas ligadas -\/ Fase 1/src/FunÃ§Ãµes/source.c}}
+{\ttfamily \#include "{}header.\+h"{}}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsubsection*{FunÃ§Ãµes}
+\begin{DoxyCompactItemize}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_a95812b5075e20fb54fb2f918d65a682d}{Carrega\+Dados}} (int \texorpdfstring{$\ast$}{*}tamanho)
+\begin{DoxyCompactList}\small\item\em Carrega dados de um ficheiro CSV. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_adffc84d3bdfc8cf98a2517673d6748fc}{Criar\+Numero}} (int n)
+\begin{DoxyCompactList}\small\item\em Cria memória para alocar a estrutura lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_a7208b19e3c3eb39d9aecd413cb334748}{Colocar\+Na\+Lista}} (\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*}inicio, int n)
+\begin{DoxyCompactList}\small\item\em Insere um número no final da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_a38d4862588fcef7d4521e8a20a6bc076}{Criar\+Matriz}} (\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Cria uma \doxylink{structMatriz}{Matriz}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_ad1fe8d7f78263047eb51bcba1b4df13a}{Colocar\+Na\+Matriz}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}inicio, \mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*}linha)
+\begin{DoxyCompactList}\small\item\em Insere uma nova linha na matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_aaabb9050671cc3f9f2d7c55d1159d84f}{Distribuir\+Dados}} (int linhas, int colunas)
+\begin{DoxyCompactList}\small\item\em Distribui os dados lidos de um arquivo em uma matriz dinâmica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{source_8c_a3e4b15202ffa92238154a330d4fdb3f1}{Mostrar\+Matriz}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Mostra os elementos de uma matriz no console. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{source_8c_a07d1c17c17e793cde95b00937efb71e9}{Mudar\+Valor}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int linha, int coluna, int Valor\+Mudar)
+\begin{DoxyCompactList}\small\item\em Modifica o valor de um elemento específico na matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_afce87bd5d413f7bb22ea34d9b944a260}{Inserir\+Linha}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int linha, int tamanhoC, int \texorpdfstring{$\ast$}{*}valores)
+\begin{DoxyCompactList}\small\item\em Insere uma nova linha após uma linha específica na matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_ab8c79c5842ad98dbdcf2e4def3678873}{Inserir\+Coluna}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int posicao, int \texorpdfstring{$\ast$}{*}valores)
+\begin{DoxyCompactList}\small\item\em Insere uma nova coluna em uma posição específica em todas as linhas da matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_a6d729c9edcb32af6389b981ee79e40fe}{Remover\+Linha}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int linha)
+\begin{DoxyCompactList}\small\item\em Remove uma linha específica da matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{source_8c_a44712b32f14011b67079c18b1231eadd}{Remover\+Coluna}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}matriz, int coluna)
+\begin{DoxyCompactList}\small\item\em Remove uma coluna específica de todas as linhas da matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{source_8c_ad822360de36d46da5c9b2f2a691fc5ca}{soma\+Maiores}} (\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}m)
+\begin{DoxyCompactList}\small\item\em Soma os valores maiores da linha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{source_8c_a95812b5075e20fb54fb2f918d65a682d}\label{source_8c_a95812b5075e20fb54fb2f918d65a682d} 
+\index{source.c@{source.c}!CarregaDados@{CarregaDados}}
+\index{CarregaDados@{CarregaDados}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{CarregaDados()}{CarregaDados()}}
+{\footnotesize\ttfamily int \texorpdfstring{$\ast$}{*} Carrega\+Dados (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Carrega dados de um ficheiro CSV. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em tamanho} & Guarda quantos dados foram lidos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+int\texorpdfstring{$\ast$}{*} Apontador que retorna os dados lidos. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}*\ aux\ =\ (\textcolor{keywordtype}{int}*)malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int})\ *\ 50);\ \textcolor{comment}{//\ Aloca\ memória\ para\ 50\ inteiros.}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ FILE*\ ficheiro\ =\ fopen(\textcolor{stringliteral}{"{}matriz.csv"{}},\ \textcolor{stringliteral}{"{}r"{}});\ \textcolor{comment}{//\ Abrir\ o\ arquivo.}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordflow}{if}\ (ficheiro\ ==\ NULL)\ \textcolor{keywordflow}{return}\ NULL;\ \textcolor{comment}{//\ Retorna\ NULL\ caso\ o\ ficheiro\ não seja\ aberto.}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Lê os\ dados\ separados\ por\ ponto\ e\ virgula\ enquanto\ houver\ dados.}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{while}\ (fscanf\_s(ficheiro,\ \textcolor{stringliteral}{"{}\%d;"{}},\ \&aux[i])\ ==\ 1)}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ *tamanho\ =\ i;\ \ \ \ \ \textcolor{comment}{//\ Armazena\ a\ quantidade\ de\ numeros\ lidos.}}
+\DoxyCodeLine{00029\ \ \ \ \ fclose(ficheiro);\ \textcolor{comment}{//\ Fecha\ o\ arquivo.}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{return}\ aux;\ \textcolor{comment}{//\ Retorna\ um\ apontador\ para\ os\ inteiros\ armazenados.}}
+\DoxyCodeLine{00032\ \ \ \ \ free(aux);}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_a7208b19e3c3eb39d9aecd413cb334748}\label{source_8c_a7208b19e3c3eb39d9aecd413cb334748} 
+\index{source.c@{source.c}!ColocarNaLista@{ColocarNaLista}}
+\index{ColocarNaLista@{ColocarNaLista}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{ColocarNaLista()}{ColocarNaLista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*} Colocar\+Na\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Insere um número no final da lista. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em inicio} & Apontador para o primeiro elemento da lista. \\
+\hline
+{\em n} & O número a ser inserido na lista. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ nova\ =\ \mbox{\hyperlink{source_8c_adffc84d3bdfc8cf98a2517673d6748fc}{CriarNumero}}(n);\ \textcolor{comment}{//\ Cria\ um\ novo\ elemento.}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{if}\ (nova\ ==\ NULL)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;\ \textcolor{comment}{//\ Retorna\ o\ início.}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00068\ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ inicio\ =\ nova;\ \textcolor{comment}{//\ Se\ a\ lista\ está vazia,\ o\ novo\ elemento\ é colocado\ no\ início.}}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00073\ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ aux2\ =\ inicio;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Percorre\ a\ lista\ até o\ final.}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (aux2-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}}\ !=\ NULL)}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ aux2\ =\ aux2-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ aux2-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}}\ =\ nova;\ \textcolor{comment}{//\ Insere\ o\ novo\ elemento\ no\ final\ da\ lista.}}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;\ \textcolor{comment}{//\ Retorna\ um\ apontador\ para\ o\ primeiro\ elemento\ da\ lista.}}
+\DoxyCodeLine{00084\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_ad1fe8d7f78263047eb51bcba1b4df13a}\label{source_8c_ad1fe8d7f78263047eb51bcba1b4df13a} 
+\index{source.c@{source.c}!ColocarNaMatriz@{ColocarNaMatriz}}
+\index{ColocarNaMatriz@{ColocarNaMatriz}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{ColocarNaMatriz()}{ColocarNaMatriz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Colocar\+Na\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*}}]{linha }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova linha na matriz. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em inicio} & Apontador para a primeira linha da matriz. \\
+\hline
+{\em linha} & Apontador para a lista que será inserida como nova linha. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112\ \{}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ nova\ =\ \mbox{\hyperlink{source_8c_a38d4862588fcef7d4521e8a20a6bc076}{CriarMatriz}}(linha);\ \textcolor{comment}{//\ Cria\ uma\ nova\ linha\ com\ a\ lista\ fornecida.}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordflow}{if}\ (nova\ ==\ NULL)\ \textcolor{keywordflow}{return}\ inicio;\ \textcolor{comment}{//\ Retorna\ o\ início\ se\ falha\ ao\ criar\ a\ nova\ linha.}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordflow}{if}\ (inicio\ ==\ NULL)}
+\DoxyCodeLine{00119\ \ \ \ \ \{}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ inicio\ =\ nova;\ \textcolor{comment}{//\ Se\ a\ matriz\ está vazia,\ a\ nova\ linha\ é o\ início.}}
+\DoxyCodeLine{00121\ \ \ \ \ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00124\ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ aux2\ =\ inicio;}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Percorre\ a\ matriz\ até a\ última\ linha.}}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (aux2-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}}\ !=\ NULL)}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ aux2\ =\ aux2-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ aux2-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}}\ =\ nova;\ \textcolor{comment}{//\ Insere\ a\ nova\ linha\ no\ final\ da\ matriz.}}
+\DoxyCodeLine{00133\ \ \ \ \ \}}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordflow}{return}\ inicio;\ \textcolor{comment}{//\ Retorna\ um\ apontador\ para\ a\ primeira\ linha\ da\ matriz.}}
+\DoxyCodeLine{00135\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_a38d4862588fcef7d4521e8a20a6bc076}\label{source_8c_a38d4862588fcef7d4521e8a20a6bc076} 
+\index{source.c@{source.c}!CriarMatriz@{CriarMatriz}}
+\index{CriarMatriz@{CriarMatriz}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{CriarMatriz()}{CriarMatriz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Criar\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*}}]{lista }\end{DoxyParamCaption})}
+
+
+
+Cria uma \doxylink{structMatriz}{Matriz}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em lista} & Apontador para a lista que é uma linha da matriz. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ aux\ =\ (\mbox{\hyperlink{structMatriz}{Matriz}}*)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structMatriz}{Matriz}})\ *\ 1);\ \textcolor{comment}{//\ Aloca\ memória\ para\ uma\ nova\ linha\ da\ matriz.}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{if}\ (aux\ !=\ NULL)}
+\DoxyCodeLine{00096\ \ \ \ \ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}}\ =\ lista;\ \ \ \ \textcolor{comment}{//\ Define\ a\ lista\ como\ linha\ da\ matriz.}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}}\ =\ NULL;\ \textcolor{comment}{//\ Define\ a\ próxima\ linha\ vazia}}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordflow}{return}\ aux;\ \textcolor{comment}{//\ Retorna\ um\ apontador\ para\ a\ nova\ linha\ da\ matriz.}}
+\DoxyCodeLine{00102\ \ \ \ \ free(aux);}
+\DoxyCodeLine{00103\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_adffc84d3bdfc8cf98a2517673d6748fc}\label{source_8c_adffc84d3bdfc8cf98a2517673d6748fc} 
+\index{source.c@{source.c}!CriarNumero@{CriarNumero}}
+\index{CriarNumero@{CriarNumero}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{CriarNumero()}{CriarNumero()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLista}{Lista}} \texorpdfstring{$\ast$}{*} Criar\+Numero (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Cria memória para alocar a estrutura lista. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em n} & numero que é colocado na lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Lista\texorpdfstring{$\ast$}{*} Ponteiro para o novo elemento da lista. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ aux\ =\ (\mbox{\hyperlink{structLista}{Lista}}*)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structLista}{Lista}})\ *\ 1);\ \textcolor{comment}{//\ Aloca\ memória\ para\ um\ novo\ elemento\ na\ lista.}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{if}\ (aux\ !=\ NULL)}
+\DoxyCodeLine{00046\ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}}\ =\ n;\ \ \ \ \ \textcolor{comment}{//\ Define\ o\ valor\ do\ número.}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ aux-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}}\ =\ NULL;\ \textcolor{comment}{//\ Define\ o\ proximo\ elemento\ como\ NULL.}}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ aux;\ \textcolor{comment}{//\ Retorna\ uma\ apontador\ para\ o\ novo\ elemento\ da\ lista.}}
+\DoxyCodeLine{00052\ \ \ \ \ free(aux);}
+\DoxyCodeLine{00053\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_aaabb9050671cc3f9f2d7c55d1159d84f}\label{source_8c_aaabb9050671cc3f9f2d7c55d1159d84f} 
+\index{source.c@{source.c}!DistribuirDados@{DistribuirDados}}
+\index{DistribuirDados@{DistribuirDados}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{DistribuirDados()}{DistribuirDados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Distribuir\+Dados (\begin{DoxyParamCaption}\item[{int}]{linhas,  }\item[{int}]{colunas }\end{DoxyParamCaption})}
+
+
+
+Distribui os dados lidos de um arquivo em uma matriz dinâmica. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em linhas} & Número de linhas da matriz a ser criada. \\
+\hline
+{\em colunas} & Número de colunas por linha na matriz. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00144\ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{int}\ quantosNum\ =\ 0;}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{int}*\ valores\ =\ \mbox{\hyperlink{source_8c_a95812b5075e20fb54fb2f918d65a682d}{CarregaDados}}(\&quantosNum);\ \textcolor{comment}{//\ Carrega\ os\ dados\ do\ arquivo.}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz\ =\ NULL;}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{comment}{//\ Cria\ a\ matriz\ linha\ por\ linha.}}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ l\ =\ 0;\ l\ <\ linhas;\ l++)\ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ linha\ =\ NULL;}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Adiciona\ os\ valores\ à linha\ atual.}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ c\ =\ 0;\ c\ <\ colunas;\ c++)\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ linha\ =\ \mbox{\hyperlink{source_8c_a7208b19e3c3eb39d9aecd413cb334748}{ColocarNaLista}}(linha,\ valores[i++]);}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Adiciona\ a\ linha\ à matriz.}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ matriz\ =\ \mbox{\hyperlink{source_8c_ad1fe8d7f78263047eb51bcba1b4df13a}{ColocarNaMatriz}}(matriz,\ linha);}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordflow}{return}\ matriz;\ \textcolor{comment}{//\ Retorna\ a\ matriz\ criada.}}
+\DoxyCodeLine{00165\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_ab8c79c5842ad98dbdcf2e4def3678873}\label{source_8c_ab8c79c5842ad98dbdcf2e4def3678873} 
+\index{source.c@{source.c}!InserirColuna@{InserirColuna}}
+\index{InserirColuna@{InserirColuna}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{InserirColuna()}{InserirColuna()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Inserir\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{posicao,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova coluna em uma posição específica em todas as linhas da matriz. 
+
+A função percorre cada linha da matriz, inserindo um novo valor da matriz de valores fornecida na posição especificada.
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em matriz} & Apontador para a matriz onde a coluna será inserida. \\
+\hline
+{\em posicao} & Posição onde a nova coluna será inserida. \\
+\hline
+{\em valores} & Apontador para um arrays que prenche a nova coluna. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ \ \ \ \ \textcolor{keywordtype}{int}\ contadorLinha\ =\ 0;\ \textcolor{comment}{//\ Contador\ para\ acessar\ o\ valor\ correspondente\ na\ matriz.}}
+\DoxyCodeLine{00287\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;\ \textcolor{comment}{//\ Indice\ para\ percorrer\ os\ valores\ a\ serem\ inseridos.}}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00289\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ auxMatriz\ =\ matriz;\ \textcolor{comment}{//\ Apontador\ para\ percorrer\ a\ matriz.}}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00292\ \ \ \ \ \textcolor{keywordflow}{while}\ (auxMatriz\ !=\ NULL)\ \textcolor{comment}{//\ Percorre\ todas\ as\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00293\ \ \ \ \ \{}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ novaLinha\ =\ NULL;\ \textcolor{comment}{//\ Inicializa\ a\ nova\ configuração\ da\ linha.}}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ linhaAtual\ =\ auxMatriz-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};\ \textcolor{comment}{//\ Apontador\ para\ percorrer\ os\ elementos\ da\ linha\ atual.}}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ contadorColuna\ =\ 1;\ \textcolor{comment}{//\ Contador\ para\ encontrar\ a\ posição\ correta\ da\ coluna.}}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (linhaAtual\ !=\ NULL\ \&\&\ contadorColuna\ <\ posicao)\ \textcolor{comment}{//\ Copia\ os\ elementos\ da\ linha\ até a\ posição\ de\ inserção\ da\ nova\ coluna.}}
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \ \ \ \ novaLinha\ =\ \mbox{\hyperlink{source_8c_a7208b19e3c3eb39d9aecd413cb334748}{ColocarNaLista}}(novaLinha,\ linhaAtual-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}});}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ linhaAtual\ =\ linhaAtual-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ contadorColuna++;}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ novaLinha\ =\ \mbox{\hyperlink{source_8c_a7208b19e3c3eb39d9aecd413cb334748}{ColocarNaLista}}(novaLinha,\ valores[i++]);\ \textcolor{comment}{//\ Insere\ o\ novo\ valor\ na\ coluna\ especificada.}}
+\DoxyCodeLine{00308\ }
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (linhaAtual\ !=\ NULL)\ \textcolor{comment}{//\ Continua\ a\ copiar\ o\ restante\ dos\ elementos\ da\ linha.}}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \ \ \ \ novaLinha\ =\ \mbox{\hyperlink{source_8c_a7208b19e3c3eb39d9aecd413cb334748}{ColocarNaLista}}(novaLinha,\ linhaAtual-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}});}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ linhaAtual\ =\ linhaAtual-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ auxMatriz-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}}\ =\ novaLinha;\ \textcolor{comment}{//\ Atualiza\ a\ linha\ na\ matriz.}}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ auxMatriz\ =\ auxMatriz-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Avança para\ a\ próxima\ linha\ da\ matriz.}}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ contadorLinha++;}
+\DoxyCodeLine{00322\ \ \ \ \ \}}
+\DoxyCodeLine{00323\ }
+\DoxyCodeLine{00324\ \ \ \ \ \textcolor{keywordflow}{return}\ matriz;\ \textcolor{comment}{//\ Retorna\ o\ apontador\ para\ a\ matriz\ atualizada.}}
+\DoxyCodeLine{00325\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_afce87bd5d413f7bb22ea34d9b944a260}\label{source_8c_afce87bd5d413f7bb22ea34d9b944a260} 
+\index{source.c@{source.c}!InserirLinha@{InserirLinha}}
+\index{InserirLinha@{InserirLinha}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{InserirLinha()}{InserirLinha()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Inserir\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{linha,  }\item[{int}]{tamanhoC,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova linha após uma linha específica na matriz. 
+
+Esta função insere uma nova linha preenchida com os valores fornecidos após a linha especificada. Se a linha especificada for a última, a nova linha será adicionada ao final da matriz.
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em matriz} & Aponta para a matriz onde a linha será inserida. \\
+\hline
+{\em linha} & Posição após a qual a nova linha será inserida. \\
+\hline
+{\em tamanhoC} & Numero de colunas na nova linha. \\
+\hline
+{\em valores} & Apontador para um arrays que prenche a nova linha. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ LinhaM\ =\ matriz;\ \textcolor{comment}{//\ Inicializa\ o\ apontador\ para\ percorrer\ a\ matriz.}}
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keywordtype}{int}\ contadorLinha\ =\ 2;\ \textcolor{comment}{//\ Contador\ para\ encontrar\ a\ posição\ correta\ da\ linha.}}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{comment}{//\ Percorre\ a\ matriz\ até encontrar\ a\ posição\ para\ inserir\ a\ nova\ linha.}}
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordflow}{while}\ (LinhaM\ !=\ NULL\ \&\&\ contadorLinha\ <\ linha)}
+\DoxyCodeLine{00251\ \ \ \ \ \{}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ LinhaM\ =\ LinhaM-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Avança para\ a\ próxima\ linha.}}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ contadorLinha++;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Incrementa\ o\ contador\ de\ linhas.}}
+\DoxyCodeLine{00254\ \ \ \ \ \}}
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{comment}{//\ Verifica\ se\ a\ posição\ foi\ encontrada.}}
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordflow}{if}\ (LinhaM\ !=\ NULL)}
+\DoxyCodeLine{00257\ \ \ \ \ \{}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ novaLinha\ =\ NULL;\ \textcolor{comment}{//\ Inicializa\ a\ nova\ linha\ a\ ser\ inserida.}}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Preenche\ a\ nova\ linha\ com\ os\ valores\ fornecidos.}}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ tamanhoC;\ i++)}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ novaLinha\ =\ \mbox{\hyperlink{source_8c_a7208b19e3c3eb39d9aecd413cb334748}{ColocarNaLista}}(novaLinha,\ valores[i]);}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ novaMatriz\ =\ \mbox{\hyperlink{source_8c_a38d4862588fcef7d4521e8a20a6bc076}{CriarMatriz}}(novaLinha);\ \textcolor{comment}{//\ Cria\ um\ novo\ elemento\ de\ matriz\ para\ a\ nova\ linha.}}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ novaMatriz-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}}\ =\ LinhaM-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Insere\ a\ nova\ linha\ na\ posição\ correta.}}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ LinhaM-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}}\ =\ novaMatriz;\ \textcolor{comment}{//\ Conecta\ a\ nova\ linha\ à matriz.}}
+\DoxyCodeLine{00270\ \ \ \ \ \}}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \ \ \ \ \textcolor{keywordflow}{return}\ matriz;\ \textcolor{comment}{//\ Retorna\ o\ apontador\ para\ a\ matriz\ atualizada.}}
+\DoxyCodeLine{00273\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_a3e4b15202ffa92238154a330d4fdb3f1}\label{source_8c_a3e4b15202ffa92238154a330d4fdb3f1} 
+\index{source.c@{source.c}!MostrarMatriz@{MostrarMatriz}}
+\index{MostrarMatriz@{MostrarMatriz}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{MostrarMatriz()}{MostrarMatriz()}}
+{\footnotesize\ttfamily void Mostrar\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Mostra os elementos de uma matriz no console. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em m} & Apontador para a primeira linha da matriz. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00173\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ linhaAtual\ =\ m;}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{comment}{//\ Corre\ cada\ linha\ da\ matriz.}}
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordflow}{while}\ (linhaAtual\ !=\ NULL)}
+\DoxyCodeLine{00178\ \ \ \ \ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ elementoAtual\ =\ linhaAtual-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Corre\ cada\ coluna\ da\ linha\ atual.}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (elementoAtual\ !=\ NULL)}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%d\ "{}},\ elementoAtual-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}});\ \textcolor{comment}{//\ Imprime\ o\ valor\ do\ elemento.}}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ elementoAtual\ =\ elementoAtual-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};\ \textcolor{comment}{//\ Passa\ para\ a\ proxima\ linha}}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});\ \textcolor{comment}{//\ Nova\ linha\ após terminar\ de\ imprimir\ uma\ linha\ da\ matriz.}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ linhaAtual\ =\ linhaAtual-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};}
+\DoxyCodeLine{00190\ \ \ \ \ \}}
+\DoxyCodeLine{00191\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_a07d1c17c17e793cde95b00937efb71e9}\label{source_8c_a07d1c17c17e793cde95b00937efb71e9} 
+\index{source.c@{source.c}!MudarValor@{MudarValor}}
+\index{MudarValor@{MudarValor}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{MudarValor()}{MudarValor()}}
+{\footnotesize\ttfamily bool Mudar\+Valor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{linha,  }\item[{int}]{coluna,  }\item[{int}]{Valor\+Mudar }\end{DoxyParamCaption})}
+
+
+
+Modifica o valor de um elemento específico na matriz. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em matriz} & Apontador para a matriz a ser modificada. \\
+\hline
+{\em linha} & Número da linha do elemento a ser modificado. \\
+\hline
+{\em coluna} & Número da coluna do elemento a ser modificado. \\
+\hline
+{\em Valor\+Mudar} & Novo valor para o elemento especificado. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00202\ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ auxLinha\ =\ matriz;}
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordtype}{int}\ contadorLinha\ =\ 1;}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{comment}{//\ Encontra\ a\ linha\ especificada.}}
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordflow}{while}\ (auxLinha\ !=\ NULL\ \&\&\ contadorLinha\ <\ linha)\ \{}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ auxLinha\ =\ auxLinha-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ contadorLinha++;}
+\DoxyCodeLine{00210\ \ \ \ \ \}}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keywordflow}{if}\ (auxLinha\ !=\ NULL)}
+\DoxyCodeLine{00213\ \ \ \ \ \{}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ auxColuna\ =\ auxLinha-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ contadorColuna\ =\ 1;}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Encontra\ a\ coluna\ especificada.}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (auxColuna\ !=\ NULL\ \&\&\ contadorColuna\ <\ coluna)}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ auxColuna\ =\ auxColuna-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ contadorColuna++;}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (auxColuna\ !=\ NULL)}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ auxColuna-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}}\ =\ ValorMudar;\ \textcolor{comment}{//\ Modifica\ o\ valor.}}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Retorna\ verdadeiro\ se\ mudar\ o\ valor.}}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00229\ \ \ \ \ \}}
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Retorna\ falso\ se\ não modificar\ o\ valor.}}
+\DoxyCodeLine{00231\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_a44712b32f14011b67079c18b1231eadd}\label{source_8c_a44712b32f14011b67079c18b1231eadd} 
+\index{source.c@{source.c}!RemoverColuna@{RemoverColuna}}
+\index{RemoverColuna@{RemoverColuna}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{RemoverColuna()}{RemoverColuna()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Remover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Remove uma coluna específica de todas as linhas da matriz. 
+
+Percorre todas as linhas da matriz, remove o elemento que corresponde à coluna especificada em cada linha.
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em matriz} & Apontador para a matriz da qual a coluna será removida. \\
+\hline
+{\em coluna} & Número da coluna a ser removida \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00380\ }
+\DoxyCodeLine{00381\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ LinhaAtual\ =\ matriz;\ \textcolor{comment}{//\ Apontador\ para\ percorrer\ a\ matriz.}}
+\DoxyCodeLine{00382\ }
+\DoxyCodeLine{00383\ \ \ \ \ \textcolor{comment}{//\ Percorre\ todas\ as\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00384\ \ \ \ \ \textcolor{keywordflow}{while}\ (LinhaAtual\ !=\ NULL)}
+\DoxyCodeLine{00385\ \ \ \ \ \{}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ ElementoAtual\ =\ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};\ \textcolor{comment}{//\ Apontador\ para\ percorrer\ os\ elementos\ da\ linha.}}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ ElementoAnterior\ =\ NULL;\ \textcolor{comment}{//\ Mantém a\ referência\ ao\ elemento\ anterior\ na\ lista.}}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ contadorColuna\ =\ 1;\ \textcolor{comment}{//\ Contador\ para\ encontrar\ a\ coluna\ especificada.}}
+\DoxyCodeLine{00389\ }
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Percorre\ os\ elementos\ da\ linha\ até encontrar\ a\ coluna\ a\ ser\ removida.}}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (ElementoAtual\ !=\ NULL)}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (contadorColuna\ ==\ coluna)\ \ \textcolor{comment}{//\ Verifica\ a\ coluna\ a\ ser\ removida.}}
+\DoxyCodeLine{00394\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ElementoAnterior\ ==\ NULL)\ \ \textcolor{comment}{//\ Se\ for\ o\ primeiro\ elemento\ da\ linha.}}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}}\ =\ ElementoAtual-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};\ \textcolor{comment}{//\ Atualiza\ o\ início\ da\ linha.}}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ElementoAnterior-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}}\ =\ ElementoAtual-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};\ \textcolor{comment}{//\ Remove\ o\ elemento\ da\ linha.}}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ free(ElementoAtual);\ \textcolor{comment}{//\ Limpa\ a\ memória\ usada\ pelo\ elemento\ removido.}}
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sai\ do\ loop\ após remover\ o\ elemento.}}
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ \ \ \ \ ElementoAnterior\ =\ ElementoAtual;\ \ \ \ \textcolor{comment}{//\ Atualiza\ o\ elemento\ anterior.}}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ \ \ \ \ ElementoAtual\ =\ ElementoAtual-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};\ \textcolor{comment}{//\ Avança para\ o\ próximo\ elemento.}}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ \ \ \ \ contadorColuna++;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Incrementa\ o\ contador\ de\ colunas.}}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00411\ }
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ LinhaAtual\ =\ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Avança para\ a\ proxima\ linha\ da\ matriz.}}
+\DoxyCodeLine{00413\ \ \ \ \ \}}
+\DoxyCodeLine{00414\ }
+\DoxyCodeLine{00415\ \ \ \ \ \textcolor{keywordflow}{return}\ matriz;\ \textcolor{comment}{//\ Retorna\ o\ ponteiro\ para\ a\ matriz\ atualizada.}}
+\DoxyCodeLine{00416\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_a6d729c9edcb32af6389b981ee79e40fe}\label{source_8c_a6d729c9edcb32af6389b981ee79e40fe} 
+\index{source.c@{source.c}!RemoverLinha@{RemoverLinha}}
+\index{RemoverLinha@{RemoverLinha}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{RemoverLinha()}{RemoverLinha()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*} Remover\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{linha }\end{DoxyParamCaption})}
+
+
+
+Remove uma linha específica da matriz. 
+
+Localiza a linha a ser removida. Se encontrada, a linha á removida.
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em matriz} & Apontador para a matriz da qual a linha será removida. \\
+\hline
+{\em linha} & Número da linha a ser removida. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00337\ }
+\DoxyCodeLine{00338\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ LinhaAtual\ =\ matriz;\ \textcolor{comment}{//\ Apontador\ para\ percorrer\ a\ matriz.}}
+\DoxyCodeLine{00339\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ LinhaAnterior\ =\ NULL;\ \textcolor{comment}{//\ Apontador\ para\ manter\ a\ linha\ anterior.}}
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keywordtype}{int}\ contadorLinha\ =\ 1;\ \textcolor{comment}{//\ Contador\ para\ encontrar\ a\ linha\ especificada.}}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00342\ \ \ \ \ \textcolor{comment}{//\ Percorre\ a\ matriz\ até encontrar\ a\ linha\ a\ ser\ removida.}}
+\DoxyCodeLine{00343\ \ \ \ \ \textcolor{keywordflow}{while}\ (LinhaAtual\ !=\ NULL\ \&\&\ contadorLinha\ <\ linha)}
+\DoxyCodeLine{00344\ \ \ \ \ \{}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ LinhaAnterior\ =\ LinhaAtual;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Atualiza\ a\ linha\ anterior.}}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ LinhaAtual\ =\ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Avança para\ a\ próxima\ linha.}}
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ contadorLinha++;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Incrementa\ o\ contador\ de\ linhas.}}
+\DoxyCodeLine{00348\ \ \ \ \ \}}
+\DoxyCodeLine{00349\ }
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordflow}{if}\ (LinhaAtual\ !=\ NULL)\ \ \textcolor{comment}{//\ Verifica\ se\ a\ linha\ a\ ser\ removida\ foi\ encontrada.}}
+\DoxyCodeLine{00351\ \ \ \ \ \{}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (LinhaAnterior\ ==\ NULL)\ \ \textcolor{comment}{//\ Se\ for\ a\ primeira\ linha\ da\ matriz.}}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \ \ \ \ matriz\ =\ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Atualiza\ o\ início\ da\ matriz.}}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \ \ \ \ LinhaAnterior-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}}\ =\ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Remove\ a\ linha\ da\ matriz.}}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00360\ }
+\DoxyCodeLine{00361\ }
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ elementoAtual\ =\ LinhaAtual-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ tempElemento;}
+\DoxyCodeLine{00364\ }
+\DoxyCodeLine{00365\ \ \ \ \ \}}
+\DoxyCodeLine{00366\ }
+\DoxyCodeLine{00367\ \ \ \ \ \textcolor{keywordflow}{return}\ matriz;\ \textcolor{comment}{//\ Retorna\ o\ apontador\ para\ a\ matriz\ atualizada.}}
+\DoxyCodeLine{00368\ \}}
+
+\end{DoxyCode}
+\Hypertarget{source_8c_ad822360de36d46da5c9b2f2a691fc5ca}\label{source_8c_ad822360de36d46da5c9b2f2a691fc5ca} 
+\index{source.c@{source.c}!somaMaiores@{somaMaiores}}
+\index{somaMaiores@{somaMaiores}!source.c@{source.c}}
+\doxysubsubsection{\texorpdfstring{somaMaiores()}{somaMaiores()}}
+{\footnotesize\ttfamily int soma\+Maiores (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatriz}{Matriz}} \texorpdfstring{$\ast$}{*}}]{m }\end{DoxyParamCaption})}
+
+
+
+Soma os valores maiores da linha. 
+
+Percorre todas as linhas da matriz, e identifica o maior de todas as linhas.
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em matriz} & Apontador para a matriz de qual iremos somar as linhas. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00425\ }
+\DoxyCodeLine{00426\ }
+\DoxyCodeLine{00427\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ Linhas\ =\ m;\ \textcolor{comment}{//\ Um\ apontador\ para\ percorrer\ as\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00428\ \ \ \ \ \textcolor{keywordtype}{int}\ total\ =\ 0;\ \textcolor{comment}{//\ Acumular\ a\ soma\ dos\ maiores\ valores\ encontrados.}}
+\DoxyCodeLine{00429\ \ \ \ \ \textcolor{keywordtype}{int}\ contadorColunas\ =\ 0;\ \textcolor{comment}{//\ Declara\ uma\ variável\ para\ contar\ as\ colunas}}
+\DoxyCodeLine{00430\ \ \ \ \ \textcolor{keywordtype}{int}\ maior\ =\ 0;}
+\DoxyCodeLine{00431\ }
+\DoxyCodeLine{00432\ \ \ \ \ \textcolor{comment}{//\ Enquanto\ houver\ linhas\ na\ matriz\ são percorridas.}}
+\DoxyCodeLine{00433\ \ \ \ \ \textcolor{keywordflow}{while}\ (Linhas\ !=\ NULL)}
+\DoxyCodeLine{00434\ \ \ \ \ \{}
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Inicializa\ um\ apontador\ 'colunas'\ para\ percorrer\ os\ elementos\ (valores)\ de\ cada\ linha.}}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structLista}{Lista}}*\ colunas\ =\ Linhas-\/>\mbox{\hyperlink{structMatriz_a17b03820c8a5673afd37926df294698e}{linha}};}
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ contadorColunas\ =\ 0;\ \textcolor{comment}{//\ Reinicia\ o\ contador\ de\ colunas}}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ maior\ =\ 0;\ \textcolor{comment}{//\ Inicializa\ a\ 0\ o\ maior\ no\ inicio\ de\ cada\ linha}}
+\DoxyCodeLine{00439\ }
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Enquanto\ houver\ elementos\ percorre}}
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (colunas\ !=\ NULL)}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Condição\ que\ derfine\ o\ maior\ da\ linha}}
+\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (colunas-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}}\ >\ maior)}
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ maior\ =\ colunas-\/>\mbox{\hyperlink{structLista_a86cf672daa4e0ad11ad10efc894d19c8}{num}};\ \textcolor{comment}{//\ Determina\ o\ maior\ das\ linhas}}
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ contadorColunas++;\ \textcolor{comment}{//\ Conta\ as\ colunas}}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \ \ \ \ colunas\ =\ colunas-\/>\mbox{\hyperlink{structLista_a4315f7af70e0649945cb5106f5bf77a3}{prox}};\ \textcolor{comment}{//\ Avança de\ coluna}}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00451\ }
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ total\ +=\ maior;\textcolor{comment}{//\ Adiciona\ o\ maior\ valor\ encontrado\ na\ linha}}
+\DoxyCodeLine{00453\ }
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ Linhas\ =\ Linhas-\/>\mbox{\hyperlink{structMatriz_a9f2b4ae53a5d0e087060da60a8e92f52}{ProxLinha}};\ \textcolor{comment}{//\ Avança para\ a\ proxima\ linha}}
+\DoxyCodeLine{00455\ \ \ \ \ \}}
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00457\ }
+\DoxyCodeLine{00458\ \ \ \ \ \textcolor{keywordflow}{return}\ total;\ \textcolor{comment}{//\ Retorna\ o\ total\ acumulado\ dos\ maiores\ valores\ encontrados\ em\ cada\ linha.}}
+\DoxyCodeLine{00459\ \}}
+
+\end{DoxyCode}

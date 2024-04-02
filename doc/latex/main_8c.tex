@@ -1,0 +1,128 @@
+\doxysection{ReferÃªncia ao ficheiro C\+:/\+Users/hugoc/\+One\+Drive -\/ Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023\+\_\+2024/\+Estruturas de Dados AvanÃ§adas/\+Dev/\+Listas ligadas -\/ Fase 1/src/\+ResoluÃ§Ã£o/main.c}
+\hypertarget{main_8c}{}\label{main_8c}\index{C:/Users/hugoc/OneDrive -\/ Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023\_2024/Estruturas de Dados AvanÃ§adas/Dev/Listas ligadas -\/ Fase 1/src/ResoluÃ§Ã£o/main.c@{C:/Users/hugoc/OneDrive -\/ Instituto PolitÃ©cnico do CÃ¡vado e do Ave/2023\_2024/Estruturas de Dados AvanÃ§adas/Dev/Listas ligadas -\/ Fase 1/src/ResoluÃ§Ã£o/main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include "{}Lib/header.\+h"{}}\newline
+\doxysubsubsection*{FunÃ§Ãµes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal que utilizamos as funções criadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal que utilizamos as funções criadas. 
+
+Cria uma matriz a partir de dados carregados de um arquivo, modifica valores, insere e remove linhas e colunas, e exibe o estado final da matriz. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ setlocale(LC\_ALL,\ \textcolor{stringliteral}{"{}portuguese"{}});\ \textcolor{comment}{//\ Formatação\ correta\ de\ caracteres.}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ opcao;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//Definir\ tamanho\ da\ matriz}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ Tamlinha,\ Tamcoluna;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//Define\ o\ local\ a\ modificar\ e\ qual\ o\ valor.}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ linhaMudar,\ colunaMudar,\ valor;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//Onde\ vamos\ acrescentar\ as\ linhas\ ou\ colunas.}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ linha,\ coluna;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ soma;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//Arrays\ para\ preencher\ linhas\ e\ colunas\ adicionadas}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ valores[15]\ =\ \{\ 344,\ 32,\ 23,\ 61,\ 83,\ 324,\ 12,\ 43,65,\ \ 29,\ 87,\ 21,\ 45,\ 134,\ 56\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Cria\ a\ matriz\ e\ define\ o\ tamanho}}
+\DoxyCodeLine{00032\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Define\ o\ tamanho\ da\ matriz\ (l,c)\(\backslash\)nOpção:\ "{}});}
+\DoxyCodeLine{00033\ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d,\%d"{}},\ \&Tamlinha,\ \&Tamcoluna);}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structMatriz}{Matriz}}*\ matriz\ =\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_aaabb9050671cc3f9f2d7c55d1159d84f}{DistribuirDados}}(Tamlinha,\ Tamcoluna);}
+\DoxyCodeLine{00035\ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nMenu:\(\backslash\)n"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}1.\ Mudar\ valor\ de\ uma\ célula\(\backslash\)n"{}});}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}2.\ Inserir\ linha\(\backslash\)n"{}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}3.\ Inserir\ coluna\(\backslash\)n"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}4.\ Remover\ linha\(\backslash\)n"{}});}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}5.\ Remover\ coluna\(\backslash\)n"{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}6.\ Mostrar\ matriz\(\backslash\)n"{}});}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}7.\ Soma\(\backslash\)n"{}});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}8.\ Sair\(\backslash\)n"{}});}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Escolha\ uma\ opção:\ "{}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d"{}},\ \&opcao);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (opcao)\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Mudar\ um\ valor}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nDefine\ a\ posição\ a\ mudar\ e\ o\ valor\ a\ inserir\ (l,c,v)\(\backslash\)nOpção:\ "{}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d,\%d,\%d"{}},\ \&linhaMudar,\ \&colunaMudar,\ \&valor);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a07d1c17c17e793cde95b00937efb71e9}{MudarValor}}(matriz,\ linhaMudar,\ colunaMudar,\ valor);}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Adicione\ aqui\ a\ lógica\ para\ ler\ linha\_abaixo,\ Tamcoluna,\ valores}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nDefine\ a\ seguir\ de\ que\ linha\ pretende\ acrescentar\ a\ linha\ (l)\(\backslash\)nOpção:\ "{}});}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d"{}},\ \&linha);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ matriz\ =\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_afce87bd5d413f7bb22ea34d9b944a260}{InserirLinha}}(matriz,\ linha,\ Tamcoluna,\ valores);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Adicione\ aqui\ a\ lógica\ para\ ler\ coluna\_direia,\ valores}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nDefine\ a\ seguir\ de\ que\ coluna\ pretende\ acrescentar\ a\ coluna\ (c)\(\backslash\)nOpção:\ "{}});}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d"{}},\ \&coluna);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ matriz\ =\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_ab8c79c5842ad98dbdcf2e4def3678873}{InserirColuna}}(matriz,\ coluna,\ valores);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Remove\ linha}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nDefine\ a\ linha\ que\ pretende\ remover\ (l)\(\backslash\)nOpção:\ "{}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d"{}},\ \&linha);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ matriz\ =\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a6d729c9edcb32af6389b981ee79e40fe}{RemoverLinha}}(matriz,\ linha);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Remove\ coluna}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nDefine\ a\ coluna\ que\ pretende\ remover\ (c)\(\backslash\)nOpção:\ "{}});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ scanf\_s(\textcolor{stringliteral}{"{}\%d"{}},\ \&coluna);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ matriz\ =\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a44712b32f14011b67079c18b1231eadd}{RemoverColuna}}(matriz,\ coluna);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 6:}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Apresenta\ a\ matriz}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_a3e4b15202ffa92238154a330d4fdb3f1}{MostrarMatriz}}(matriz);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 7:}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Soma\ dos\ maiores\ valores\ das\ linhas}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ soma\ =\ \mbox{\hyperlink{Fun_xC3_xA7_xC3_xB5es_2header_8h_ad822360de36d46da5c9b2f2a691fc5ca}{somaMaiores}}(matriz,\ Tamlinha,\ Tamcoluna);}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\(\backslash\)nSoma\ dos\ maiores\ valores\ das\ linhas:\ \%d\(\backslash\)n"{}},\ soma);}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 8:}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sair}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Sair...\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Opção\ inválida!\(\backslash\)n"{}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (opcao\ !=\ 8);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ free(matriz);}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;\ \textcolor{comment}{//\ Termina\ a\ execução\ do\ programa\ com\ sucesso.}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['inserircoluna_0',['InserirColuna',['../Fun_xC3_xA7_xC3_xB5es_2header_8h.html#ab8c79c5842ad98dbdcf2e4def3678873',1,'InserirColuna(Matriz *matriz, int posicao, int *valores):&#160;source.c'],['../source_8c.html#ab8c79c5842ad98dbdcf2e4def3678873',1,'InserirColuna(Matriz *matriz, int posicao, int *valores):&#160;source.c'],['../Resolu_xC3_xA7_xC3_xA3o_2Lib_2header_8h.html#ab8c79c5842ad98dbdcf2e4def3678873',1,'InserirColuna(Matriz *matriz, int posicao, int *valores):&#160;source.c']]],
+  ['inserirlinha_1',['InserirLinha',['../Fun_xC3_xA7_xC3_xB5es_2header_8h.html#afce87bd5d413f7bb22ea34d9b944a260',1,'InserirLinha(Matriz *matriz, int linha, int tamanhoC, int *valores):&#160;source.c'],['../source_8c.html#afce87bd5d413f7bb22ea34d9b944a260',1,'InserirLinha(Matriz *matriz, int linha, int tamanhoC, int *valores):&#160;source.c'],['../Resolu_xC3_xA7_xC3_xA3o_2Lib_2header_8h.html#afce87bd5d413f7bb22ea34d9b944a260',1,'InserirLinha(Matriz *matriz, int linha, int tamanhoC, int *valores):&#160;source.c']]]
+];
