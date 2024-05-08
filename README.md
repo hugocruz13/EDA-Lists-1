@@ -1,4 +1,4 @@
-# Estruturas de Dados Avançadas (EDA) - Fase 1
+# EDA  Listas ligadas - Fase 1
 
 ##  Instituto Politécnico do Cávado e do Ave (IPCA) - Barcelos
 
